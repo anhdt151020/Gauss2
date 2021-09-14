@@ -1,0 +1,3 @@
+C:/Users/TuanAnh/CLionProjects/GaussC2/cmake-build-debug/CMakeFiles/GaussC2.dir
+C:/Users/TuanAnh/CLionProjects/GaussC2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/TuanAnh/CLionProjects/GaussC2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
