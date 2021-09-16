@@ -8,7 +8,7 @@
 #include "gauss.h"
 
 void main() {
-    fou = fopen("outputc3.txt","w");
+    fou = fopen("outputc2.txt","w");
     fin = fopen("C:\\Users\\TuanAnh\\CLionProjects\\GaussC2\\input.txt","r");
     fscanf(fin,"%d\n",&n);
 
