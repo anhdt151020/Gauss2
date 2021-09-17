@@ -45,7 +45,7 @@ void main() {
             A[i][n+1] = AS[t][n+1];
             t++;
         }
-        for (int i = 1; i <=n ; ++i) {
+        for (int i = 1; i <= n ; ++i) {
             if ((isZero(i)) && (A[i][n+1] != 0)){
                 printf("He PT vo nghiem\n");
                 fprintf(fou,"He PT vo nghiem\n");
