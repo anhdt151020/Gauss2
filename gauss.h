@@ -40,6 +40,9 @@ void checkAn(int n) {
                 t ++;
                 m = m - 1;
             }
+            if (c == false){
+
+            }
         }
     }
     t = 1;
@@ -58,13 +61,9 @@ void khuGauss(int m) {
     fprintf(fou, "XU LI MA TRAN BAN DAU BANG PHUONG PHAP KHU GAUSS\n");
     float t;
     for (int i = 1; i <= m; i++) {
-        if (A[i][i] == 0) {
-            printf("Err");
-            exit(0);
-        }
         for (int k = i + 1; k <= n; k++) {
             t = A[k][i] / A[i][i];
-            for (int j = 1; j <= n + 1; j++) {
+            for (int j = 1; j <= n+1; j++) {
                 A[k][j] = A[k][j] - t * A[i][j];
             }
         }

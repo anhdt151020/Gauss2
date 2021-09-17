@@ -20,7 +20,7 @@ void main() {
     for (int i = 1; i <= n; ++i) {
         fscanf(fin,"%f\n",&B[i]);
     }
-    fprintf(fou,"MA TRAN HE SO BAN DAU\n");
+    fprintf(fou,"MA TRAN BO SUNG BAN DAU\n");
     bienAThanhMatranBoSung();
     inMaTranBoSung();
     fprintf(fou,"-=====================================================- \n");
@@ -34,17 +34,17 @@ void main() {
     }
     khuGauss(m);
     int t = 1;
-    for (int i = 1; i <= n; ++i) {
-        A[i][n+1] = AS[t][n+1];
-        t++;
-    }
-    bienAThanhMatranBoSung();
+
     inMaTranBoSung();
     if (m == n){
         giaiHeGauss(n);
         inNghiem();
     }
     if (m < n){
+        for (int i = 1; i <= n; ++i) {
+            A[i][n+1] = AS[t][n+1];
+            t++;
+        }
         for (int i = 1; i <=n ; ++i) {
             if ((isZero(i)) && (A[i][n+1] != 0)){
                 printf("He PT vo nghiem\n");
