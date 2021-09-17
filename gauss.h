@@ -9,7 +9,7 @@
 void checkAn(int n) {
     bool c;
     m = n;
-    float temp, check;
+    float temp, check = 1;
     int t = 1;
     for (int i = 1; i <= n; ++i) {
         if (isZero(i)) continue;
@@ -24,8 +24,7 @@ void checkAn(int n) {
                 if (check != 0) {
                     c = false;
                     continue;
-                };
-                if (check == 0) {
+                }else {
                     c = true;
                 }
             }
@@ -36,12 +35,11 @@ void checkAn(int n) {
                     AS[t][n+1] = A[j][n+1] - temp * A[i][n+1];
                     //printf("AS = %f\n",AS[t][n+1]);
                 }
-               // printf("A = %f - temp = %f- A=%f - t = %d - n =%d\n",A[i][n+1],temp,A[j][n+1],t,n);
+                //printf("A = %f - temp = %f- A=%f - t = %d - n =%d\n",A[i][n+1],temp,A[j][n+1],t,n);
                 t ++;
                 m = m - 1;
             }
             if (c == false){
-
             }
         }
     }
